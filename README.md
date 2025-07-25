@@ -1,76 +1,81 @@
-<a href="https://www.breatheco.de"><img height="280" align="right" src="https://github.com/4GeeksAcademy/flask-rest-hello/blob/main/docs/assets/badge.png?raw=true"></a>
+# Dparlor - Star Wars REST API
 
-# Flask Boilerplate for Junior Developers
+Welcome to the Dparlor Star Wars REST API project! This API provides a comprehensive interface to access various data related to the Star Wars universe. It is designed to help you enhance your coding skills while working with RESTful services.
 
-Create flask API's in minutes, [📹 watch the video tutorial](https://youtu.be/ORxQ-K3BzQA).
+## Purpose
 
-- [Extensive documentation here](https://start.4geeksacademy.com).
-- Integrated with Pipenv for package managing.
-- Fast deloyment to render.com or heroku with `$ pipenv run deploy`.
-- Use of `.env` file.
-- SQLAlchemy integration for database abstraction.
+The primary objective of this project is to increase your coding ability and knowledge by providing a hands-on experience with REST APIs. You will learn how to create, manage, and consume APIs effectively.
 
-## 1) Installation
+## Features
 
-This template installs itself in a few seconds if you open it for free with Codespaces (recommended) or Gitpod.
-Skip this installation steps and jump to step 2 if you decide to use any of those services.
+- Access to various Star Wars entities such as characters, planets, starships, and vehicles.
+- RESTful API endpoints to retrieve, create, update, and delete data.
+- Easy-to-use and well-documented API structure.
+- Built with modern web technologies for better understanding and learning.
 
-> Important: The boiplerplate is made for python 3.10 but you can change the `python_version` on the Pipfile.
+## Getting Started
 
-The following steps are automatically runned withing gitpod, if you are doing a local installation you have to do them manually:
+To get started with the Dparlor Star Wars REST API, follow these steps:
 
-```sh
-pipenv install;
-psql -U root -c 'CREATE DATABASE example;'
-pipenv run init;
-pipenv run migrate;
-pipenv run upgrade;
-```
+### Prerequisites
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+- Node.js (version 12 or higher)
+- npm (Node Package Manager)
 
-## 2) How to Start coding
+### Installation
 
-There is an example API working with an example database. All your application code should be written inside the `./src/` folder.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dabeldab/Dparlor-miamipt78-starWars-RestAPI.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Dparlor-miamipt78-starWars-RestAPI
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-- src/main.py (it's where your endpoints should be coded)
-- src/models.py (your database tables and serialization logic)
-- src/utils.py (some reusable classes and functions)
-- src/admin.py (add your models to the admin and manage your data easily)
+### Running the API
 
-For a more detailed explanation, look for the tutorial inside the `docs` folder.
-
-## Remember to migrate every time you change your models
-
-You have to migrate and upgrade the migrations for every update you make to your models:
-
+To start the API server, run the following command:
 ```bash
-$ pipenv run migrate # (to make the migrations)
-$ pipenv run upgrade  # (to update your databse with the migrations)
+npm start
 ```
+The server will start, and you can access the API at `http://localhost:3000`.
 
-## Generate a database diagram
+## API Endpoints
 
-If you want to visualize the structure of your database in the form of a diagram, you can generate it with the following command:
+The following are some of the key API endpoints available:
 
-```bash
-$ pipenv run diagram
-```
+- `GET /api/characters`: Retrieve a list of Star Wars characters.
+- `GET /api/planets`: Retrieve a list of planets in the Star Wars universe.
+- `GET /api/starships`: Retrieve a list of starships.
+- `POST /api/characters`: Create a new character.
+- `PUT /api/characters/:id`: Update an existing character.
+- `DELETE /api/characters/:id`: Delete a character by ID.
 
-This command will generate a file with the database diagram based on the models defined in `src/models.py`.
+For a complete list of endpoints and their usage, please refer to the [API Documentation](link-to-api-docs).
 
-## Check your API live
+## Contributing
 
-1. Once you run the `pipenv run start` command your API will start running live and you can open it by clicking in the "ports" tab and then clicking "open browser".
+We welcome contributions to improve this project! If you have suggestions or enhancements, please feel free to fork the repository and submit a pull request.
 
-> ✋ If you are working on a coding cloud like [Codespaces](https://docs.github.com/en/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace#sharing-a-port) or [Gitpod](https://www.gitpod.io/docs/configure/workspaces/ports#configure-port-visibility) make sure that your forwared port is public.
+### Todos
 
-## Publish/Deploy your website!
+- [ ] Improve API documentation.
+- [ ] Add more endpoints for additional Star Wars entities.
+- [ ] Implement authentication for secure access.
+- [ ] Write unit tests for critical components.
 
-This boilerplate it's 100% read to deploy with Render.com and Herkou in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
+## License
 
-### Contributors
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+## Acknowledgments
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+- Thanks to the creators of the Star Wars universe for providing such a rich source of inspiration.
+- Special thanks to the open-source community for their support and contributions.
+
+Feel free to reach out if you have any questions or need assistance. Happy coding!
